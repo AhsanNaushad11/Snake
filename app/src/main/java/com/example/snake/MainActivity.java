@@ -1,4 +1,4 @@
-﻿package com.example.snake;
+package com.example.snake;
 
 import android.animation.ObjectAnimator;
 import android.content.SharedPreferences;

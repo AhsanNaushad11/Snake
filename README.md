@@ -1,4 +1,4 @@
-﻿# Snake (Android Native)
+# Snake (Android Native)
 
 A native Android Snake game built with Java activities/views and a JNI C++ helper.
 

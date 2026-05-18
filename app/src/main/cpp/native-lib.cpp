@@ -1,4 +1,4 @@
-﻿#include <jni.h>
+#include <jni.h>
 
 extern "C"
 JNIEXPORT jintArray JNICALL
