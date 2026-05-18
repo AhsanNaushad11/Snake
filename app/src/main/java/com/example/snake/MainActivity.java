@@ -1,52 +1,68 @@
 package com.example.snake;
 
 import android.animation.ObjectAnimator;
-import android.content.SharedPreferences;
+import android.content.Intent;
+import android.content.res.ColorStateList;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
+import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.SeekBar;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.WindowInsetsControllerCompat;
+
+import com.example.snake.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity implements SnakeGameView.GameEvents {
-    private static final String PREFS = "snake_prefs";
-    private static final String HIGH_SCORE_KEY = "high_score";
-
     private SnakeGameView gameView;
+    private View rootLayout;
+    private View topBar;
+    private View controlPanel;
     private TextView scoreText;
     private TextView highScoreText;
-    private TextView speedLabel;
+    private TextView hintText;
     private Button startPauseButton;
+    private Button restartButton;
+    private Button settingsButton;
+    private ImageButton upButton;
+    private ImageButton downButton;
+    private ImageButton leftButton;
+    private ImageButton rightButton;
 
+    private ThemeOption currentTheme;
     private int highScore;
     private boolean isStarted;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
 
-        gameView = findViewById(R.id.snakeGameView);
-        scoreText = findViewById(R.id.scoreText);
-        highScoreText = findViewById(R.id.highScoreText);
-        speedLabel = findViewById(R.id.speedLabel);
-        startPauseButton = findViewById(R.id.startPauseButton);
-        Button restartButton = findViewById(R.id.restartButton);
-        SeekBar speedSeekBar = findViewById(R.id.speedSeekBar);
-
-        SharedPreferences prefs = getSharedPreferences(PREFS, MODE_PRIVATE);
-        highScore = prefs.getInt(HIGH_SCORE_KEY, 0);
+        rootLayout = binding.rootLayout;
+        topBar = binding.topBar;
+        controlPanel = binding.controlPanel;
+        gameView = binding.snakeGameView;
+        scoreText = binding.scoreText;
+        highScoreText = binding.highScoreText;
+        hintText = binding.hintText;
+        startPauseButton = binding.startPauseButton;
+        restartButton = binding.restartButton;
+        settingsButton = binding.settingsButton;
+        upButton = binding.upButton;
+        downButton = binding.downButton;
+        leftButton = binding.leftButton;
+        rightButton = binding.rightButton;
 
         gameView.setGameEvents(this);
-        gameView.setSpeedLevel(speedSeekBar.getProgress() + 1);
 
+        highScore = GameSettings.getHighScore(this);
         updateScore(0);
         updateHighScore();
-        updateSpeedLabel(speedSeekBar.getProgress() + 1);
 
         startPauseButton.setOnClickListener(v -> {
             if (!isStarted) {
@@ -74,32 +90,20 @@ public class MainActivity extends AppCompatActivity implements SnakeGameView.Gam
             startPauseButton.setText(R.string.pause);
         });
 
-        speedSeekBar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-                int speed = progress + 1;
-                updateSpeedLabel(speed);
-                gameView.setSpeedLevel(speed);
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-            }
-        });
-
-        ImageButton upButton = findViewById(R.id.upButton);
-        ImageButton downButton = findViewById(R.id.downButton);
-        ImageButton leftButton = findViewById(R.id.leftButton);
-        ImageButton rightButton = findViewById(R.id.rightButton);
+        settingsButton.setOnClickListener(v -> startActivity(new Intent(this, SettingsActivity.class)));
 
         upButton.setOnClickListener(v -> gameView.queueDirection(Direction.UP));
         downButton.setOnClickListener(v -> gameView.queueDirection(Direction.DOWN));
         leftButton.setOnClickListener(v -> gameView.queueDirection(Direction.LEFT));
         rightButton.setOnClickListener(v -> gameView.queueDirection(Direction.RIGHT));
+
+        applyUserSettings();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        applyUserSettings();
     }
 
     @Override
@@ -120,10 +124,7 @@ public class MainActivity extends AppCompatActivity implements SnakeGameView.Gam
 
         if (score > highScore) {
             highScore = score;
-            getSharedPreferences(PREFS, MODE_PRIVATE)
-                .edit()
-                .putInt(HIGH_SCORE_KEY, highScore)
-                .apply();
+            GameSettings.setHighScore(this, highScore);
             updateHighScore();
         }
     }
@@ -146,6 +147,71 @@ public class MainActivity extends AppCompatActivity implements SnakeGameView.Gam
             .show();
     }
 
+    private void applyUserSettings() {
+        gameView.setSpeedLevel(GameSettings.getSpeed(this));
+        ThemeOption selectedTheme = ThemeOption.fromPreference(this, GameSettings.getTheme(this));
+        gameView.applyTheme(selectedTheme);
+
+        if (currentTheme == null || currentTheme.id != selectedTheme.id) {
+            currentTheme = selectedTheme;
+            applyThemeToViews(currentTheme);
+        }
+    }
+
+    private void applyThemeToViews(ThemeOption theme) {
+        rootLayout.setBackgroundColor(theme.backgroundColor);
+
+        topBar.setBackground(createPanelBackground(theme.panelColor, theme.gridColor));
+        controlPanel.setBackground(createPanelBackground(theme.panelColor, theme.gridColor));
+        gameView.setBackground(createPanelBackground(theme.panelColor, theme.gridColor));
+
+        scoreText.setTextColor(theme.textColor);
+        highScoreText.setTextColor(theme.textColor);
+        hintText.setTextColor(theme.hintColor);
+
+        ColorStateList accentTint = ColorStateList.valueOf(theme.accentColor);
+        startPauseButton.setBackgroundTintList(accentTint);
+        restartButton.setBackgroundTintList(accentTint);
+        settingsButton.setBackgroundTintList(accentTint);
+
+        startPauseButton.setTextColor(theme.buttonIconColor);
+        restartButton.setTextColor(theme.buttonIconColor);
+        settingsButton.setTextColor(theme.buttonIconColor);
+
+        upButton.setBackgroundTintList(accentTint);
+        downButton.setBackgroundTintList(accentTint);
+        leftButton.setBackgroundTintList(accentTint);
+        rightButton.setBackgroundTintList(accentTint);
+
+        ColorStateList iconTint = ColorStateList.valueOf(theme.buttonIconColor);
+        upButton.setImageTintList(iconTint);
+        downButton.setImageTintList(iconTint);
+        leftButton.setImageTintList(iconTint);
+        rightButton.setImageTintList(iconTint);
+
+        getWindow().setStatusBarColor(theme.statusBarColor);
+        getWindow().setNavigationBarColor(theme.statusBarColor);
+
+        WindowInsetsControllerCompat insetsController =
+            new WindowInsetsControllerCompat(getWindow(), getWindow().getDecorView());
+        boolean useLightSystemIcons = theme.id != GameSettings.THEME_DARK_RED;
+        insetsController.setAppearanceLightStatusBars(useLightSystemIcons);
+        insetsController.setAppearanceLightNavigationBars(useLightSystemIcons);
+    }
+
+    private GradientDrawable createPanelBackground(int fillColor, int strokeColor) {
+        GradientDrawable drawable = new GradientDrawable();
+        drawable.setShape(GradientDrawable.RECTANGLE);
+        drawable.setCornerRadius(dpToPx(24));
+        drawable.setColor(fillColor);
+        drawable.setStroke((int) dpToPx(2), strokeColor);
+        return drawable;
+    }
+
+    private float dpToPx(int dp) {
+        return TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, getResources().getDisplayMetrics());
+    }
+
     private void animateScorePulse() {
         ObjectAnimator pulseX = ObjectAnimator.ofFloat(scoreText, View.SCALE_X, 1f, 1.2f, 1f);
         pulseX.setDuration(260);
@@ -162,9 +228,5 @@ public class MainActivity extends AppCompatActivity implements SnakeGameView.Gam
 
     private void updateHighScore() {
         highScoreText.setText(getString(R.string.best_score_label, highScore));
-    }
-
-    private void updateSpeedLabel(int speed) {
-        speedLabel.setText(getString(R.string.speed_label, speed));
     }
 }

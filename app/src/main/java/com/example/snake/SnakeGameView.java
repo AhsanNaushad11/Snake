@@ -67,6 +67,7 @@ public class SnakeGameView extends View {
 
     private GameEvents gameEvents;
     private ValueAnimator moveAnimator;
+    private ThemeOption themeOption;
 
     public SnakeGameView(Context context) {
         super(context);
@@ -84,19 +85,12 @@ public class SnakeGameView extends View {
     }
 
     private void init() {
-        gridPaint.setColor(Color.parseColor("#D1EDD3"));
         gridPaint.setStrokeWidth(1.5f);
 
-        panelPaint.setColor(Color.parseColor("#E7F9E8"));
-
-        snakeBodyPaint.setColor(Color.parseColor("#67C877"));
-        snakeHeadPaint.setColor(Color.parseColor("#3FA451"));
-
         eyePaint.setColor(Color.WHITE);
-        foodPaint.setColor(Color.parseColor("#FF6B4A"));
-
         sparklePaint.setStyle(Paint.Style.FILL);
 
+        applyTheme(ThemeOption.fromPreference(getContext(), GameSettings.THEME_STANDARD));
         setFocusable(true);
         resetGame();
     }
@@ -173,6 +167,20 @@ public class SnakeGameView extends View {
             return;
         }
         queuedDirection = newDirection;
+    }
+
+    public void applyTheme(ThemeOption option) {
+        if (option == null) {
+            return;
+        }
+
+        themeOption = option;
+        gridPaint.setColor(themeOption.gridColor);
+        panelPaint.setColor(themeOption.panelColor);
+        snakeBodyPaint.setColor(themeOption.snakeBodyColor);
+        snakeHeadPaint.setColor(themeOption.snakeHeadColor);
+        foodPaint.setColor(themeOption.foodColor);
+        invalidate();
     }
 
     @Override
@@ -292,7 +300,13 @@ public class SnakeGameView extends View {
             }
 
             float alpha = 1f - life;
-            sparklePaint.setColor(Color.argb((int) (alpha * 255), 255, 143, 98));
+            int sparkleColor = themeOption != null ? themeOption.foodColor : Color.parseColor("#FF8F62");
+            sparklePaint.setColor(Color.argb(
+                (int) (alpha * 255),
+                Color.red(sparkleColor),
+                Color.green(sparkleColor),
+                Color.blue(sparkleColor)
+            ));
 
             float cx = boardLeft + (sparkle.gridX + 0.5f) * cellSize + sparkle.dx * life;
             float cy = boardTop + (sparkle.gridY + 0.5f) * cellSize + sparkle.dy * life;
