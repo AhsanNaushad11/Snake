@@ -1,26 +1,34 @@
 [
     {
-        "merged": "com.example.snake.app-debug-32:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.snake.app-main-34:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\layout\\activity_splash.xml"
     },
     {
         "merged": "com.example.snake.app-debug-32:/layout_activity_main.xml.flat",
         "source": "com.example.snake.app-main-34:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.snake.app-debug-32:/layout_activity_splash.xml.flat",
-        "source": "com.example.snake.app-main-34:/layout/activity_splash.xml"
+        "merged": "com.example.snake.app-debug-32:/layout_activity_settings.xml.flat",
+        "source": "com.example.snake.app-main-34:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.example.snake.app-debug-32:/drawable_ic_snake_cartoon.xml.flat",
-        "source": "com.example.snake.app-main-34:/drawable/ic_snake_cartoon.xml"
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\drawable_ic_snake_cartoon.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\drawable\\ic_snake_cartoon.xml"
     },
     {
-        "merged": "com.example.snake.app-debug-32:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.snake.app-main-34:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "com.example.snake.app-debug-32:/drawable_bg_game_panel.xml.flat",
-        "source": "com.example.snake.app-main-34:/drawable/bg_game_panel.xml"
+        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-debug-32:\\drawable_bg_game_panel.xml.flat",
+        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\drawable\\bg_game_panel.xml"
     }
 ]

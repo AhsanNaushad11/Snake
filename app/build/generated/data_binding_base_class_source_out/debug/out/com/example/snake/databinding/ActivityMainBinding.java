@@ -7,7 +7,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -46,16 +45,16 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ImageButton rightButton;
 
   @NonNull
+  public final ConstraintLayout rootLayout;
+
+  @NonNull
   public final TextView scoreText;
 
   @NonNull
+  public final Button settingsButton;
+
+  @NonNull
   public final SnakeGameView snakeGameView;
-
-  @NonNull
-  public final TextView speedLabel;
-
-  @NonNull
-  public final SeekBar speedSeekBar;
 
   @NonNull
   public final Button startPauseButton;
@@ -69,9 +68,10 @@ public final class ActivityMainBinding implements ViewBinding {
   private ActivityMainBinding(@NonNull ConstraintLayout rootView,
       @NonNull LinearLayout controlPanel, @NonNull ImageButton downButton,
       @NonNull TextView highScoreText, @NonNull TextView hintText, @NonNull ImageButton leftButton,
-      @NonNull Button restartButton, @NonNull ImageButton rightButton, @NonNull TextView scoreText,
-      @NonNull SnakeGameView snakeGameView, @NonNull TextView speedLabel,
-      @NonNull SeekBar speedSeekBar, @NonNull Button startPauseButton, @NonNull LinearLayout topBar,
+      @NonNull Button restartButton, @NonNull ImageButton rightButton,
+      @NonNull ConstraintLayout rootLayout, @NonNull TextView scoreText,
+      @NonNull Button settingsButton, @NonNull SnakeGameView snakeGameView,
+      @NonNull Button startPauseButton, @NonNull LinearLayout topBar,
       @NonNull ImageButton upButton) {
     this.rootView = rootView;
     this.controlPanel = controlPanel;
@@ -81,10 +81,10 @@ public final class ActivityMainBinding implements ViewBinding {
     this.leftButton = leftButton;
     this.restartButton = restartButton;
     this.rightButton = rightButton;
+    this.rootLayout = rootLayout;
     this.scoreText = scoreText;
+    this.settingsButton = settingsButton;
     this.snakeGameView = snakeGameView;
-    this.speedLabel = speedLabel;
-    this.speedSeekBar = speedSeekBar;
     this.startPauseButton = startPauseButton;
     this.topBar = topBar;
     this.upButton = upButton;
@@ -159,27 +159,23 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
+      ConstraintLayout rootLayout = (ConstraintLayout) rootView;
+
       id = R.id.scoreText;
       TextView scoreText = ViewBindings.findChildViewById(rootView, id);
       if (scoreText == null) {
         break missingId;
       }
 
+      id = R.id.settingsButton;
+      Button settingsButton = ViewBindings.findChildViewById(rootView, id);
+      if (settingsButton == null) {
+        break missingId;
+      }
+
       id = R.id.snakeGameView;
       SnakeGameView snakeGameView = ViewBindings.findChildViewById(rootView, id);
       if (snakeGameView == null) {
-        break missingId;
-      }
-
-      id = R.id.speedLabel;
-      TextView speedLabel = ViewBindings.findChildViewById(rootView, id);
-      if (speedLabel == null) {
-        break missingId;
-      }
-
-      id = R.id.speedSeekBar;
-      SeekBar speedSeekBar = ViewBindings.findChildViewById(rootView, id);
-      if (speedSeekBar == null) {
         break missingId;
       }
 
@@ -202,8 +198,8 @@ public final class ActivityMainBinding implements ViewBinding {
       }
 
       return new ActivityMainBinding((ConstraintLayout) rootView, controlPanel, downButton,
-          highScoreText, hintText, leftButton, restartButton, rightButton, scoreText, snakeGameView,
-          speedLabel, speedSeekBar, startPauseButton, topBar, upButton);
+          highScoreText, hintText, leftButton, restartButton, rightButton, rootLayout, scoreText,
+          settingsButton, snakeGameView, startPauseButton, topBar, upButton);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

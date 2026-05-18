@@ -4,7 +4,7 @@
             "outputFile": "com.example.snake.app-mergeDebugResources-30:/values-v27/values-v27.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\caches\\8.14.3\\transforms\\e96b58cf70167e8ed696a5579df7991b\\transformed\\core-splashscreen-1.0.1\\res\\values-v27\\values-v27.xml",
+                    "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\caches\\9.4.1\\transforms\\bf29905bb8a9252ca582c7d1e4c59d29\\transformed\\core-splashscreen-1.0.1\\res\\values-v27\\values-v27.xml",
                     "from": {
                         "startLines": "2,3,4,7",
                         "startColumns": "4,4,4,4",

@@ -1,7 +1,7 @@
 [
   {
-    "directory": "C:/Users/AhsanBinNaushad/Documents/Codex/2026-05-15/create-a-snake-game-project-utilize/app/.cxx/Debug/2f2y4p2z/armeabi-v7a",
-    "command": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\27.0.12077973\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --sysroot=C:/Users/AhsanBinNaushad/AppData/Local/Android/Sdk/ndk/27.0.12077973/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsnake_native_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -o CMakeFiles\\snake-native.dir\\native-lib.cpp.o -c C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp\\native-lib.cpp",
+    "directory": "C:/Users/AhsanBinNaushad/Documents/Codex/2026-05-15/create-a-snake-game-project-utilize/app/.cxx/Debug/6n674f70/armeabi-v7a",
+    "command": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=armv7-none-linux-androideabi24 --sysroot=C:/Users/AhsanBinNaushad/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -Dsnake_native_EXPORTS -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -o CMakeFiles\\snake-native.dir\\native-lib.cpp.o -c C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp\\native-lib.cpp",
     "file": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp\\native-lib.cpp"
   }
 ]
