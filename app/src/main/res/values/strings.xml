@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Snake</string>
+    <string name="score_label">Score: %1$d</string>
+    <string name="best_score_label">Best: %1$d</string>
+    <string name="speed_label">Speed: %1$d</string>
+    <string name="tap_to_start">Swipe or use arrows to play</string>
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="resume">Resume</string>
+    <string name="restart">Restart</string>
+    <string name="game_over">Game Over</string>
+    <string name="try_again">Try Again</string>
+</resources>
