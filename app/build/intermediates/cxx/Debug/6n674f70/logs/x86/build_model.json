@@ -8,9 +8,9 @@
     "triple": "i686-linux-android",
     "llvmTriple": "i686-none-linux-android"
   },
-  "cxxBuildFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx\\Debug\\6n674f70\\x86",
-  "soFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx\\Debug\\6n674f70\\obj\\x86",
-  "soRepublishFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cmake\\debug\\obj\\x86",
+  "cxxBuildFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/x86",
+  "soFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx/Debug/6n674f70/obj/x86",
+  "soRepublishFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cmake/debug/obj/x86",
   "abiPlatformVersion": 24,
   "cmake": {
     "effectiveConfiguration": {
@@ -36,16 +36,16 @@
     "implicitBuildTargetSet": [],
     "cmakeSettingsConfiguration": "android-gradle-plugin-predetermined-name",
     "module": {
-      "cxxFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx",
-      "intermediatesBaseFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates",
-      "intermediatesFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx",
+      "cxxFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx",
+      "intermediatesBaseFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates",
+      "intermediatesFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx",
       "gradleModulePathName": ":app",
-      "moduleRootFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app",
-      "moduleBuildFile": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build.gradle",
-      "makeFile": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp\\CMakeLists.txt",
+      "moduleRootFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app",
+      "moduleBuildFile": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build.gradle",
+      "makeFile": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/src/main/cpp/CMakeLists.txt",
       "buildSystem": "CMAKE",
-      "ndkFolder": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358",
-      "ndkFolderBeforeSymLinking": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358",
+      "ndkFolder": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358",
+      "ndkFolderBeforeSymLinking": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358",
       "ndkVersion": "28.2.13676358",
       "ndkSupportedAbiList": [
         "armeabi-v7a",
@@ -135,32 +135,32 @@
           "llvmTriple": "x86_64-none-linux-android"
         }
       ],
-      "cmakeToolchainFile": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\build\\cmake\\android.toolchain.cmake",
+      "cmakeToolchainFile": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/build/cmake/android.toolchain.cmake",
       "cmake": {
-        "cmakeExe": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\cmake.exe",
+        "cmakeExe": "/home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/cmake",
         "cmakeVersionFromDsl": "3.22.1"
       },
       "stlSharedObjectMap": {
         "LIBCXX_SHARED": {
-          "armeabi-v7a": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\arm-linux-androideabi\\libc++_shared.so",
-          "arm64-v8a": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\aarch64-linux-android\\libc++_shared.so",
-          "riscv64": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\riscv64-linux-android\\libc++_shared.so",
-          "x86": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\i686-linux-android\\libc++_shared.so",
-          "x86_64": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\sysroot\\usr\\lib\\x86_64-linux-android\\libc++_shared.so"
+          "armeabi-v7a": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/arm-linux-androideabi/libc++_shared.so",
+          "arm64-v8a": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/libc++_shared.so",
+          "riscv64": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/riscv64-linux-android/libc++_shared.so",
+          "x86": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/i686-linux-android/libc++_shared.so",
+          "x86_64": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/x86_64-linux-android/libc++_shared.so"
         },
         "LIBCXX_STATIC": {},
         "NONE": {},
         "SYSTEM": {}
       },
       "project": {
-        "rootBuildGradleFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize",
-        "sdkFolder": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk",
+        "rootBuildGradleFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake",
+        "sdkFolder": "/home/ahsannaushad/Android/Sdk",
         "isBuildOnlyTargetAbiEnabled": true,
         "isCmakeBuildCohabitationEnabled": false,
         "isPrefabEnabled": false
       },
       "outputOptions": [],
-      "ninjaExe": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "ninjaExe": "/home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja",
       "hasBuildTimeInformation": true
     },
     "prefabClassPaths": [],
@@ -172,28 +172,28 @@
   "buildSettings": {
     "environmentVariables": []
   },
-  "prefabFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx\\Debug\\6n674f70\\prefab\\x86",
+  "prefabFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/prefab/x86",
   "isActiveAbi": true,
   "fullConfigurationHash": "6n674f704315346o7675w40o2x267371o2z86o9321s5p2j3w6f45325213",
   "fullConfigurationHashKey": "# Values used to calculate the hash in this folder name.\n# Should not depend on the absolute path of the project itself.\n#   - AGP: 9.2.1.\n#   - $NDK is the path to NDK 28.2.13676358.\n#   - $PROJECT is the path to the parent folder of the root Gradle build file.\n#   - $ABI is the ABI to be built with. The specific value doesn\u0027t contribute to the value of the hash.\n#   - $HASH is the hash value computed from this text.\n#   - $CMAKE is the path to CMake 3.22.1.\n#   - $NINJA is the path to Ninja.\n-H$PROJECT/app/src/main/cpp\n-DCMAKE_SYSTEM_NAME\u003dAndroid\n-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON\n-DCMAKE_SYSTEM_VERSION\u003d24\n-DANDROID_PLATFORM\u003dandroid-24\n-DANDROID_ABI\u003d$ABI\n-DCMAKE_ANDROID_ARCH_ABI\u003d$ABI\n-DANDROID_NDK\u003d$NDK\n-DCMAKE_ANDROID_NDK\u003d$NDK\n-DCMAKE_TOOLCHAIN_FILE\u003d$NDK/build/cmake/android.toolchain.cmake\n-DCMAKE_MAKE_PROGRAM\u003d$NINJA\n-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17\n-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d$PROJECT/app/build/intermediates/cxx/Debug/$HASH/obj/$ABI\n-DCMAKE_BUILD_TYPE\u003dDebug\n-B$PROJECT/app/.cxx/Debug/$HASH/$ABI\n-GNinja",
   "configurationArguments": [
-    "-HC:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp",
+    "-H/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/src/main/cpp",
     "-DCMAKE_SYSTEM_NAME\u003dAndroid",
     "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
     "-DCMAKE_SYSTEM_VERSION\u003d24",
     "-DANDROID_PLATFORM\u003dandroid-24",
     "-DANDROID_ABI\u003dx86",
     "-DCMAKE_ANDROID_ARCH_ABI\u003dx86",
-    "-DANDROID_NDK\u003dC:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358",
-    "-DCMAKE_ANDROID_NDK\u003dC:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358",
-    "-DCMAKE_TOOLCHAIN_FILE\u003dC:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\build\\cmake\\android.toolchain.cmake",
-    "-DCMAKE_MAKE_PROGRAM\u003dC:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "-DANDROID_NDK\u003d/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358",
+    "-DCMAKE_ANDROID_NDK\u003d/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358",
+    "-DCMAKE_TOOLCHAIN_FILE\u003d/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/build/cmake/android.toolchain.cmake",
+    "-DCMAKE_MAKE_PROGRAM\u003d/home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja",
     "-DCMAKE_CXX_FLAGS\u003d-std\u003dc++17",
-    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dC:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx\\Debug\\6n674f70\\obj\\x86",
-    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003dC:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx\\Debug\\6n674f70\\obj\\x86",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003d/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx/Debug/6n674f70/obj/x86",
+    "-DCMAKE_RUNTIME_OUTPUT_DIRECTORY\u003d/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx/Debug/6n674f70/obj/x86",
     "-DCMAKE_BUILD_TYPE\u003dDebug",
-    "-BC:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx\\Debug\\6n674f70\\x86",
+    "-B/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/x86",
     "-GNinja"
   ],
-  "intermediatesParentFolder": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx\\Debug\\6n674f70"
+  "intermediatesParentFolder": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx/Debug/6n674f70"
 }

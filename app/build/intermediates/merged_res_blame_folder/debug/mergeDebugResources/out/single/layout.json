@@ -1,18 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-mergeDebugResources-31:\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\layout\\activity_splash.xml"
+        "merged": "com.example.snake.app-mergeDebugResources-35:/layout/activity_main.xml",
+        "source": "com.example.snake.app-main-38:/layout/activity_main.xml"
     },
     {
-        "merged": "com.example.snake.app-mergeDebugResources-31:/layout/activity_settings.xml",
-        "source": "com.example.snake.app-main-34:/layout/activity_settings.xml"
+        "merged": "com.example.snake.app-mergeDebugResources-35:/layout/activity_settings.xml",
+        "source": "com.example.snake.app-main-38:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.example.snake.app-mergeDebugResources-31:/layout/activity_main.xml",
-        "source": "com.example.snake.app-main-34:/layout/activity_main.xml"
-    },
-    {
-        "merged": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-mergeDebugResources-31:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\daemon\\9.4.1\\com.example.snake.app-main-34:\\layout\\activity_main.xml"
+        "merged": "com.example.snake.app-mergeDebugResources-35:/layout/activity_splash.xml",
+        "source": "com.example.snake.app-main-38:/layout/activity_splash.xml"
     }
 ]

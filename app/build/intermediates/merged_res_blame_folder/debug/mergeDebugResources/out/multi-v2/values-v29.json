@@ -1,17 +1,17 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.snake.app-mergeDebugResources-30:/values-v29/values-v29.xml",
+            "outputFile": "com.example.snake.app-mergeDebugResources-34:/values-v29/values-v29.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\caches\\9.4.1\\transforms\\bf29905bb8a9252ca582c7d1e4c59d29\\transformed\\core-splashscreen-1.0.1\\res\\values-v29\\values-v29.xml",
+                    "source": "/home/ahsannaushad/.gradle/caches/9.5.1/transforms/3f88ac1097638ff7ee6dd18ac653941c/transformed/core-splashscreen-1.2.0/res/values-v29/values-v29.xml",
                     "from": {
-                        "startLines": "2,7",
+                        "startLines": "2,8",
                         "startColumns": "4,4",
-                        "startOffsets": "55,374",
-                        "endLines": "6,8",
-                        "endColumns": "12,12",
-                        "endOffsets": "369,464"
+                        "startOffsets": "55,442",
+                        "endLines": "7,8",
+                        "endColumns": "12,82",
+                        "endOffsets": "437,520"
                     }
                 }
             ]

@@ -1,10 +1,20 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.snake.app-mergeDebugResources-30:/values-watch-v20/values-watch-v20.xml",
+            "outputFile": "com.example.snake.app-mergeDebugResources-34:/values-watch-v20/values-watch-v20.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\caches\\9.4.1\\transforms\\934491998d169f2e0b3f839a6f836b42\\transformed\\appcompat-1.7.0\\res\\values-watch-v20\\values-watch-v20.xml",
+                    "source": "/home/ahsannaushad/.gradle/caches/9.5.1/transforms/3f88ac1097638ff7ee6dd18ac653941c/transformed/core-splashscreen-1.2.0/res/values-watch-v20/values-watch-v20.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,129,205,280,357,428,496,566",
+                        "endColumns": "73,75,74,76,70,67,69,67",
+                        "endOffsets": "124,200,275,352,423,491,561,629"
+                    }
+                },
+                {
+                    "source": "/home/ahsannaushad/.gradle/caches/9.5.1/transforms/a7307d992c3d156434689321bab50a6a/transformed/appcompat-1.7.1/res/values-watch-v20/values-watch-v20.xml",
                     "from": {
                         "startLines": "2,5,8",
                         "startColumns": "4,4,4",
@@ -20,16 +30,6 @@
                         "endLines": "12,15,18",
                         "endColumns": "12,12,12",
                         "endOffsets": "788,959,1132"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\AhsanBinNaushad\\.gradle\\caches\\9.4.1\\transforms\\bf29905bb8a9252ca582c7d1e4c59d29\\transformed\\core-splashscreen-1.0.1\\res\\values-watch-v20\\values-watch-v20.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,129,205,280,357,428,496,566",
-                        "endColumns": "73,75,74,76,70,67,69,67",
-                        "endOffsets": "124,200,275,352,423,491,561,629"
                     }
                 }
             ]

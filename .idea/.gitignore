@@ -1,3 +1,15 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+.gradle/
+.idea/
+build/
+local.properties
+*.iml
+.cxx/
+*.o
+*.a
+*.so
+*.dex
+*.class
+*.bin
