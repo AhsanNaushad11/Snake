@@ -12,13 +12,13 @@ android {
         }
     }
 
-    namespace 'com.ankanalytic.snake'
-    compileSdk 37
+    namespace = 'com.ankanalytic.snake'
+    compileSdk = 37
 
     defaultConfig {
-        applicationId 'com.ankanalytic.snake'
-        minSdk 24
-        targetSdk 37
+        applicationId = 'com.ankanalytic.snake'
+        minSdk = 24
+        targetSdk = 37
         versionCode 1
         versionName '1.0'
 
