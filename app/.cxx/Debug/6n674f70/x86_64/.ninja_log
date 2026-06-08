@@ -1,0 +1,6 @@
+# ninja log v5
+2	144	8008223507652108	CMakeFiles/snake-native.dir/native-lib.cpp.o	752e5a08fe4e555e
+147	522	8008223510828787	C:/Users/AhsanBinNaushad/Documents/Codex/2026-05-15/create-a-snake-game-project-utilize/app/build/intermediates/cxx/Debug/6n674f70/obj/x86_64/libsnake-native.so	36ef830e0010ac35
+0	23	0	clean	74591699a720f474
+2	645	8026141439574923	CMakeFiles/snake-native.dir/native-lib.cpp.o	752e5a08fe4e555e
+647	2160	8026141454440331	C:/Users/AhsanBinNaushad/Documents/Codex/2026-05-15/create-a-snake-game-project-utilize/app/build/intermediates/cxx/Debug/6n674f70/obj/x86_64/libsnake-native.so	36ef830e0010ac35

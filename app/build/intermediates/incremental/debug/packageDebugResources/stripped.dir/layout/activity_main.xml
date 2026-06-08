@@ -37,7 +37,7 @@
             android:textStyle="bold" />
     </LinearLayout>
 
-    <com.example.snake.SnakeGameView
+    <com.ankanalytic.snake.SnakeGameView
         android:id="@+id/snakeGameView"
         android:layout_width="0dp"
         android:layout_height="0dp"
