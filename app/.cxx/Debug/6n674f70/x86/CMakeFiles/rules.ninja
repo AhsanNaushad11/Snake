@@ -17,7 +17,7 @@
 rule CXX_COMPILER__snake-native_Debug
   depfile = $DEP_FILE
   deps = gcc
-  command = C:\Users\AhsanBinNaushad\AppData\Local\Android\Sdk\ndk\28.2.13676358\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/AhsanBinNaushad/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = /home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android24 --sysroot=/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building CXX object $out
 
 
@@ -25,7 +25,7 @@ rule CXX_COMPILER__snake-native_Debug
 # Rule for linking CXX shared library.
 
 rule CXX_SHARED_LIBRARY_LINKER__snake-native_Debug
-  command = cmd.exe /C "$PRE_LINK && C:\Users\AhsanBinNaushad\AppData\Local\Android\Sdk\ndk\28.2.13676358\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=i686-none-linux-android24 --sysroot=C:/Users/AhsanBinNaushad/AppData/Local/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/windows-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = $PRE_LINK && /home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=i686-none-linux-android24 --sysroot=/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/sysroot -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD
   description = Linking CXX shared library $TARGET_FILE
   restat = $RESTAT
 
@@ -42,7 +42,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Users\AhsanBinNaushad\AppData\Local\Android\Sdk\cmake\3.22.1\bin\cmake.exe --regenerate-during-build -SC:\Users\AhsanBinNaushad\Documents\Codex\2026-05-15\create-a-snake-game-project-utilize\app\src\main\cpp -BC:\Users\AhsanBinNaushad\Documents\Codex\2026-05-15\create-a-snake-game-project-utilize\app\.cxx\Debug\6n674f70\x86
+  command = /home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/cmake --regenerate-during-build -S/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/src/main/cpp -B/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/x86
   description = Re-running CMake...
   generator = 1
 
@@ -51,7 +51,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = C:\Users\AhsanBinNaushad\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = /home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -59,6 +59,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = C:\Users\AhsanBinNaushad\AppData\Local\Android\Sdk\cmake\3.22.1\bin\ninja.exe -t targets
+  command = /home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja -t targets
   description = All primary targets available:
 

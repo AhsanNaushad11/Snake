@@ -1,19 +1,19 @@
 {
   "buildFiles": [
-    "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\src\\main\\cpp\\CMakeLists.txt"
+    "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/src/main/cpp/CMakeLists.txt"
   ],
   "cleanCommandsComponents": [
     [
-      "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+      "/home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja",
       "-C",
-      "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx\\Debug\\6n674f70\\x86",
+      "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/x86",
       "clean"
     ]
   ],
   "buildTargetsCommandComponents": [
-    "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\cmake\\3.22.1\\bin\\ninja.exe",
+    "/home/ahsannaushad/Android/Sdk/cmake/3.22.1/bin/ninja",
     "-C",
-    "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\.cxx\\Debug\\6n674f70\\x86",
+    "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/.cxx/Debug/6n674f70/x86",
     "{LIST_OF_TARGETS_TO_BUILD}"
   ],
   "libraries": {
@@ -21,14 +21,14 @@
       "toolchain": "toolchain",
       "abi": "x86",
       "artifactName": "snake-native",
-      "output": "C:\\Users\\AhsanBinNaushad\\Documents\\Codex\\2026-05-15\\create-a-snake-game-project-utilize\\app\\build\\intermediates\\cxx\\Debug\\6n674f70\\obj\\x86\\libsnake-native.so",
+      "output": "/mnt/cdd8e2ae-5a06-4153-ab92-e178989e9baa/Projects/MobileProjects/Snake/app/build/intermediates/cxx/Debug/6n674f70/obj/x86/libsnake-native.so",
       "runtimeFiles": []
     }
   },
   "toolchains": {
     "toolchain": {
-      "cCompilerExecutable": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang.exe",
-      "cppCompilerExecutable": "C:\\Users\\AhsanBinNaushad\\AppData\\Local\\Android\\Sdk\\ndk\\28.2.13676358\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+      "cCompilerExecutable": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin/clang.lld",
+      "cppCompilerExecutable": "/home/ahsannaushad/Android/Sdk/ndk/28.2.13676358/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++.lld"
     }
   },
   "cFileExtensions": [],
