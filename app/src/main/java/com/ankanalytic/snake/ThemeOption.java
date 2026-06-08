@@ -47,57 +47,53 @@ public final class ThemeOption {
     }
 
     public static ThemeOption fromPreference(Context context, int preference) {
-        switch (preference) {
-            case GameSettings.THEME_DARK_RED:
-                return fromResources(
-                        context,
-                        GameSettings.THEME_DARK_RED,
-                        R.color.theme_dark_bg,
-                        R.color.theme_dark_panel,
-                        R.color.theme_dark_grid,
-                        R.color.theme_dark_snake_head,
-                        R.color.theme_dark_snake_body,
-                        R.color.theme_dark_food,
-                        R.color.theme_dark_text,
-                        R.color.theme_dark_hint,
-                        R.color.theme_dark_accent,
-                        R.color.theme_dark_panel,
-                        R.color.theme_dark_icon
-                );
-            case GameSettings.THEME_GRASS_YELLOW:
-                return fromResources(
-                        context,
-                        GameSettings.THEME_GRASS_YELLOW,
-                        R.color.theme_grass_bg,
-                        R.color.theme_grass_panel,
-                        R.color.theme_grass_grid,
-                        R.color.theme_grass_snake_head,
-                        R.color.theme_grass_snake_body,
-                        R.color.theme_grass_food,
-                        R.color.theme_grass_text,
-                        R.color.theme_grass_hint,
-                        R.color.theme_grass_accent,
-                        R.color.theme_grass_panel,
-                        R.color.theme_grass_icon
-                );
-            case GameSettings.THEME_STANDARD:
-            default:
-                return fromResources(
-                        context,
-                        GameSettings.THEME_STANDARD,
-                        R.color.theme_standard_bg,
-                        R.color.theme_standard_panel,
-                        R.color.theme_standard_grid,
-                        R.color.theme_standard_snake_head,
-                        R.color.theme_standard_snake_body,
-                        R.color.theme_standard_food,
-                        R.color.theme_standard_text,
-                        R.color.theme_standard_hint,
-                        R.color.theme_standard_accent,
-                        R.color.theme_standard_panel,
-                        R.color.theme_standard_icon
-                );
-        }
+        return switch (preference) {
+            case GameSettings.THEME_DARK_RED -> fromResources(
+                    context,
+                    GameSettings.THEME_DARK_RED,
+                    R.color.theme_dark_bg,
+                    R.color.theme_dark_panel,
+                    R.color.theme_dark_grid,
+                    R.color.theme_dark_snake_head,
+                    R.color.theme_dark_snake_body,
+                    R.color.theme_dark_food,
+                    R.color.theme_dark_text,
+                    R.color.theme_dark_hint,
+                    R.color.theme_dark_accent,
+                    R.color.theme_dark_panel,
+                    R.color.theme_dark_icon
+            );
+            case GameSettings.THEME_GRASS_YELLOW -> fromResources(
+                    context,
+                    GameSettings.THEME_GRASS_YELLOW,
+                    R.color.theme_grass_bg,
+                    R.color.theme_grass_panel,
+                    R.color.theme_grass_grid,
+                    R.color.theme_grass_snake_head,
+                    R.color.theme_grass_snake_body,
+                    R.color.theme_grass_food,
+                    R.color.theme_grass_text,
+                    R.color.theme_grass_hint,
+                    R.color.theme_grass_accent,
+                    R.color.theme_grass_panel,
+                    R.color.theme_grass_icon
+            );
+            default -> fromResources(
+                    context,
+                    GameSettings.THEME_STANDARD,
+                    R.color.theme_standard_bg,
+                    R.color.theme_standard_panel,
+                    R.color.theme_standard_grid,
+                    R.color.theme_standard_snake_head,
+                    R.color.theme_standard_snake_body,
+                    R.color.theme_standard_food,
+                    R.color.theme_standard_text,
+                    R.color.theme_standard_hint,
+                    R.color.theme_standard_accent,
+                    R.color.theme_standard_panel,
+                    R.color.theme_standard_icon
+            );
+        };
     }
 
     private static ThemeOption fromResources(

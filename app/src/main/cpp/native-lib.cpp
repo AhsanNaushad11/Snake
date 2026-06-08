@@ -2,7 +2,7 @@
 
 extern "C"
 JNIEXPORT jintArray JNICALL
-Java_com_example_snake_NativeGameLib_nextHead(
+Java_com_ankanalytic_snake_NativeGameLib_nextHead(
         JNIEnv *env,
         jclass,
         jint x,
@@ -34,7 +34,7 @@ Java_com_example_snake_NativeGameLib_nextHead(
 
 extern "C"
 JNIEXPORT jboolean JNICALL
-Java_com_example_snake_NativeGameLib_containsPoint(
+Java_com_ankanalytic_snake_NativeGameLib_containsPoint(
         JNIEnv *env,
         jclass,
         jintArray flattenedPoints,

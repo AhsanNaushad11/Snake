@@ -1,6 +1,7 @@
 package com.ankanalytic.snake;
 
 import android.animation.ValueAnimator;
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,6 +15,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayDeque;
@@ -36,7 +38,7 @@ public class SnakeGameView extends View {
     private final Deque<Point> snake = new ArrayDeque<>();    private final Runnable tickRunner = this::tick;
     private final List<Point> previousSnake = new ArrayList<>();
     private final List<Sparkle> sparkles = new ArrayList<>();
-    private Point food = new Point();
+    private final Point food = new Point();
     private Direction direction = Direction.RIGHT;
     private Direction queuedDirection = Direction.RIGHT;
     private float cellSize;
@@ -184,7 +186,7 @@ public class SnakeGameView extends View {
     }
 
     @Override
-    protected void onDraw(Canvas canvas) {
+    protected void onDraw(@NonNull Canvas canvas) {
         super.onDraw(canvas);
 
         drawBoard(canvas);
@@ -306,6 +308,7 @@ public class SnakeGameView extends View {
         syncPreviousSnake();
 
         Point head = snake.peekFirst();
+        assert head != null;
         int[] next = NativeGameLib.nextHead(head.x, head.y, direction.ordinal());
         int nextX = next[0];
         int nextY = next[1];
@@ -435,6 +438,7 @@ public class SnakeGameView extends View {
         return from + (to - from) * progress;
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getActionMasked()) {
