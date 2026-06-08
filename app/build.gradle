@@ -3,7 +3,7 @@ plugins {
 }
 
 android {
-    namespace 'com.example.snake'
+    namespace 'com.ankanalytic.snake'
     compileSdk 36
 
     defaultConfig {
